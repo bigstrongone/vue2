@@ -4,7 +4,7 @@ import { Toast } from 'vant'
 import store from '@/store'
 // 创建一个新的axios实例
 const instance = axios.create({
-  baseURL: 'http://smart-shop.itheima.net/index.php?s=/api',
+  baseURL: 'https://smart-shop.itheima.net/index.php?s=/api',
   timeout: 5000,
   headers: { platform: 'h5' }
 })
