@@ -25,8 +25,9 @@ export default {
       this.$emit('input', this.value + 1)
     },
     handleChange (e) {
-      // console.log(e.target.value)
+      console.log(e.target.value)
       const num = +e.target.value // 转数字处理 (1) 数字 (2) NaN
+      console.log(num)
 
       // 输入了不合法的文本 或 输入了负值，回退成原来的 value 值
       if (isNaN(num) || num < 1) {
